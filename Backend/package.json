@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "dotenv": "^17.3.1",
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
+    "groq-sdk": "^1.1.2",
+    "next": "^16.2.1",
+    "next-auth": "^4.24.13",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^6.0.2",
+    "ws": "^8.20.0"
+  }
+}
