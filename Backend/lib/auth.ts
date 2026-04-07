@@ -11,27 +11,40 @@ export const authOptions: NextAuthOptions = {
       name: "Email",
       credentials: {
         email: { label: "E-post", type: "email" },
-        password: { label: "Losenord", type: "password" },
+        password: { label: "Lösenord", type: "password" },
       },
       async authorize(credentials) {
         if (!credentials?.email) return null
-        const [user] = await db.select()
+
+        const [user] = await db
+          .select()
           .from(users)
           .where(eq(users.email, credentials.email))
           .limit(1)
-        return user ?? null
+
+        if (!user) return null
+
+        // TODO: lägg till lösenordshashning (bcrypt) senare
+        return { id: user.id, email: user.email, name: user.name }
       },
     }),
   ],
   callbacks: {
-    async session({ session }) {
-      const [dbUser] = await db.select()
-        .from(users)
-        .where(eq(users.email, session.user.email!))
-        .limit(1)
-      if (dbUser) session.user.id = dbUser.id
+    async session({ session, token }) {
+      if (token?.sub) {
+        session.user.id = token.sub
+      }
       return session
     },
+    async jwt({ token, user }) {
+      if (user) {
+        token.sub = user.id
+      }
+      return token
+    },
+  },
+  session: {
+    strategy: "jwt",
   },
   pages: {
     signIn: "/login",
