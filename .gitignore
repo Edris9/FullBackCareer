@@ -1,0 +1,7 @@
+node_modules/
+Backend/
+DotnetBackend/KarriarAPI/bin/
+DotnetBackend/KarriarAPI/obj/
+DotnetBackend/Frontend/node_modules/
+*.user
+.vs/
