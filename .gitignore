@@ -5,3 +5,4 @@ DotnetBackend/KarriarAPI/obj/
 DotnetBackend/Frontend/node_modules/
 *.user
 .vs/
+DotnetBackend/Frontend/
