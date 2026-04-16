@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotnetBackend", "DotnetBackend", "{C1C17006-2A90-A954-BFB9-BF04A620B3A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarriarAPI", "DotnetBackend\KarriarAPI\KarriarAPI.csproj", "{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F7996C1-D0A3-DBD5-27A1-0F27820C3A2A} = {C1C17006-2A90-A954-BFB9-BF04A620B3A9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21037B76-AAE8-40CC-A225-41D43B11ED26}
+	EndGlobalSection
+EndGlobal
